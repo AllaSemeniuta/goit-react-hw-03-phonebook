@@ -60,12 +60,10 @@ export class App extends Component {
 
   getFilteredContacts = () => {
     const { filter, contacts } = this.state;
-    // const normalizedFilter = filter.toLowerCase();
+    const normalizedFilter = filter.trim().toLowerCase();
 
-    return contacts.filter(
-      ({ name }) => name.includes(filter)
-
-      // name.toLowerCase().includes(normalizedFilter)
+    return contacts.filter(({ name }) =>
+      name.toLowerCase().includes(normalizedFilter)
     );
   };
 
