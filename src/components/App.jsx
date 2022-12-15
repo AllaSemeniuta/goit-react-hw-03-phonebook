@@ -6,7 +6,6 @@ import { ContactForm } from './ContactForm/ContactForm';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
 import { Box } from './Box/Box';
-import { isValidInputTimeValue } from '@testing-library/user-event/dist/utils';
 
 export class App extends Component {
   state = {
